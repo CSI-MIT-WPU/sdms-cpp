@@ -12,9 +12,10 @@ void toviewprofile(){
         cout<<"panel :"<<panel<<endl;
         cout<<"Address :"<<Address<<endl;
         cout<<"PhoneNumber :"<<phoneNumber<<endl;
-        
-        
-        }
+    }
+    else{
+        cout<<"PRN not found.\n"
+    }
 }
 
         
