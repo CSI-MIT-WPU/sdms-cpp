@@ -1,4 +1,4 @@
-void searchplstud(int prn)
+void searchstud(long int prn)
 {
     for(i=0, i<n; i++)
     {
