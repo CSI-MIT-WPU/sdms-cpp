@@ -21,7 +21,7 @@ public:
         cout << "\nEnter your roll number: ";
         cin >> roll_no;
 
-        cout << "\nEnter your date of birth (YYYY-MM-DD): ";
+        cout << "\nEnter your date of birth (DD-MM-YYYY): ";
         cin >> dateOfBirth;
 
         cout << "\nEnter your gender (M/F): ";
