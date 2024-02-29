@@ -22,26 +22,25 @@ public:
 
     void toviewprofile(){
         int tempprn,i,j,length;
-        float marks[6];
         bool status=true;
-        student s;
+        
         // statement to calculate no. of student record from std
         // lenght=.......
-        
-        
+            
         cout<<"enter prn of student\n";
         cin>>tempprn;
         for(i=0;i<length;i++){
+            student s;
             if (s.prn==tempprn)
             {
                 cout<<"\nSTUDENT PROFILE";
-                cout<<"\nPRN :"<<s.Prn;
-                cout<<"\nname :"<<s.Name;
+                cout<<"\nPRN :"<<s.prn;
+                cout<<"\nname :"<<s.name;
                 cout<<"\nrno :"<<s.rno;
                 cout<<"\nGender :"<<s.gender;
                 cout<<"\nattendance :"<<s.attendace;
                 cout<<"\npanel :"<<s.panel;
-                cout<<"\nAddress :"<<s.Address;
+                cout<<"\nAddress :"<<s.address;
                 cout<<"\nPhoneNumber :"<<s.phoneNumber;
                 status==false;
             }  
