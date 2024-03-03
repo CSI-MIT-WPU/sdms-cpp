@@ -1,3 +1,4 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
 #include <string>
 
@@ -5,7 +6,7 @@ using namespace std;
 
 class Student 
 {
-private:
+public:
     long PRN;
     string Name;
     int Rno;
@@ -21,44 +22,32 @@ private:
     float BEEE_Internals;
     float BEEE_Externals;
 
-public:
-   Student(long prn, const string& name, int rno, float attendance, const string& panel,
-            const string& address, long phone, const string& email, float ppsInternals,
-            float ppsExternals, float dmgtInternals, float dmgtExternals,
-            float beeeInternals, float beeeExternals) :
-            PRN(prn), Name(name), Rno(rno), Attendance(attendance), Panel(panel),
-            Address(address), phoneNumber(phone), Email(email), PPS_Internals(ppsInternals),
-            PPS_Externals(ppsExternals), DMGT_Internals(dmgtInternals), DMGT_Externals(dmgtExternals),
-            BEEE_Internals(beeeInternals), BEEE_Externals(beeeExternals)
-    {}
-    
-    void addStudent() 
-    {
-        
-    }
 
-    
-    bool feesPaid()  
-    {
-        
-    }
-
-    bool noBacks()  
-    {
-        
+   Student()
+    {    
+PRN=0;
+Name=" ";
+Rno=0;
+Attendance=0;
+Panel=" ";
+Address=" ";
+phoneNumber=0;
+Email=" ";
+PPS_Internals=0;
+PPS_Externals=0;
+DMGT_Internals=0;
+DMGT_Externals=0;
+BEEE_Internals=0;
+BEEE_Externals=0;
     }
     
-    bool isEligible()  
-    {
-        
-    }
-
-    void searchStudent()  
-    {
-        
-    }
-
-    void printMarks()  
-    {
- }
+  
 };
+int main() {
+
+    Student obj;
+    cout<<obj.Rno;
+
+
+    return 0;
+}
