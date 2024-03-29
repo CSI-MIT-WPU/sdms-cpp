@@ -11,8 +11,8 @@ public:
     string branch;
 };
 
-bool isEligibleForScholarship(const Student& student) {
-    const string& branch = student.branch;
+bool EligibleForScholarship(const Student student) {
+    const string branch = student.branch;
     float gpa = student.gpa;
     float jee = student.jee;
     float cet = student.cet;
@@ -38,10 +38,10 @@ int main() {
     cout << "Enter GPA: ";
     cin >> student.gpa;
 
-    if (isEligibleForScholarship(student)) {
-        cout << "Student is eligible for a scholarship." << endl;
+    if (EligibleForScholarship(student)) {
+        cout << "Eligible for a scholarship." << endl;
     } else {
-        cout << "Student is not eligible for a scholarship." << endl;
+        cout << "Not eligible for a scholarship." << endl;
     }
 
     return 0;
